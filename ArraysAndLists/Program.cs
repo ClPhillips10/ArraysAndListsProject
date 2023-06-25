@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 namespace ArraysAndLists
 {
     class Program
@@ -22,8 +23,11 @@ namespace ArraysAndLists
              * Then add those numbers to either the evens List
              * or the odds List
              */
+            //Using Linq
+            //var numeroEven = numbers.Where(x => x % 2 == 0);
+            //var numeroOdd = numbers.Where(x => x % 2 != 0);
 
-
+            
             foreach (var num in numbers)
             {
                 if (num % 2 == 0)
@@ -49,6 +53,7 @@ namespace ArraysAndLists
             {
                 Console.WriteLine($"{num}: is an odd number!");
             }
+            Console.ReadLine();
 
 
         }
