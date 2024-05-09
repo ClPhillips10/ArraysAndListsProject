@@ -15,6 +15,9 @@ namespace ArraysAndLists
              * Name one List "evens"
              * Name the other List "odds"
              */
+            var evens = new List<int>();
+            var odds = new List<int>();
+
             var even = new List<int>();
             var odd = new List<int>();
             /* Using either a foreach or for loop,
@@ -27,33 +30,21 @@ namespace ArraysAndLists
             //var numeroEven = numbers.Where(x => x % 2 == 0);
             //var numeroOdd = numbers.Where(x => x % 2 != 0);
 
-            
-            foreach (var num in numbers)
-            {
-                if (num % 2 == 0)
+            foreach(var number in numbers)
+            { if (number % 2 == 0)
                 {
-                    even.Add(num);
-
+                    evens.Add(number);
                 }
                 else
                 {
-                    odd.Add(num);
-
+                    odds.Add(number);
                 }
             }
-
-            foreach (var num in even)
+            foreach(var numer in evens)
             {
-                Console.WriteLine($"{num}: is an even number!");
-
+                Console.Write($"{numer}, ");
             }
 
-            Console.WriteLine("-------------------------------------");
-            foreach (var num in odd)
-            {
-                Console.WriteLine($"{num}: is an odd number!");
-            }
-            Console.ReadLine();
 
 
         }
